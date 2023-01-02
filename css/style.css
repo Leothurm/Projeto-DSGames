@@ -11,10 +11,17 @@ html, body{
     --color-green-pool:#38AF90;
     --color-light-red:#DD7E92;
     --color-dark-gray:#383838;
+    --color-light-gray:#F0F0F0;
     --color-white:#FFF;
-    --color-light-gray:#797979;
+    --color-gray:#797979;
 }
+.color-green{
+    color: var(--color-green-pool);
 
+}
+.line{
+    border: 1px solid #38AF90;
+}
 .container{
     width: 100%;
     max-width: 990px;
@@ -22,6 +29,10 @@ html, body{
 }
 img{
     width: 280px;
+}
+
+.color-green{
+    color: var(--color-green-pool);
 }
 
 header{
@@ -70,4 +81,54 @@ header{
 
 .img-header img{
     width: 62px;
+}
+
+.last-news{
+    color: var(--color-gray);
+    padding: 0 10px;
+}
+
+.last-news h1{
+    text-align: center;
+}
+
+.card-last-news{
+    background-color:var(--color-light-gray);
+    padding: 16px 12px 12px 12px ;
+    border-radius: 8px;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.75));
+    margin-bottom: 30px;
+}
+
+.last-news h2{
+   font-size: 16px;
+}
+
+.last-news h3{
+    font-size: 12px;
+}
+
+.last-news small,p{
+    font-size: 10px;
+}
+
+.load-more{
+    color: var(--color-light-red);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+.button{
+    text-align: center;
+}
+.load-more-button{
+    padding: 20px;
+    font-size: 18px;
+    background-color: var(--color-light-red);
+    border: none;
+    border-radius: 8px;
+    color: var(--color-white);
+    font-weight: 700;
+    left: auto;
+    right: auto;
 }
