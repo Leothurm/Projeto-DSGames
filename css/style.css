@@ -1,134 +1,188 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-*{
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
 }
-html, body{
-    font-family: 'Poppins', sans-serif;
-    padding: 0;
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --color-green-pool: #38af90;
+  --color-light-red: #dd7e92;
+  --color-dark-gray: #383838;
+  --color-light-gray: #f0f0f0;
+  --color-white: #fff;
+  --color-gray: #797979;
+}
+.color-green {
+  color: var(--color-green-pool);
+}
+.line {
+  border: 1px solid #38af90;
+}
+.container {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+}
+img {
+  width: 280px;
+}
+
+.color-green {
+  color: var(--color-green-pool);
+}
+
+header {
+  height: 90px;
+  width: 100%;
+  background-color: var(--color-green-pool);
+  color: var(--color-white);
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.75));
+}
+
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-main h1 {
+  font-size: 18px;
+}
+
+.nav-list-container {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.nav-list {
+  display: none;
+}
+
+.img-header {
+  list-style: none;
+}
+
+.img-header img {
+  width: 62px;
+}
+
+.last-news {
+  color: var(--color-gray);
+  padding: 0 10px;
+}
+
+.last-news h1 {
+  text-align: center;
+}
+
+.card-last-news {
+  background-color: var(--color-light-gray);
+  padding: 16px 12px 12px 12px;
+  border-radius: 8px;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.75));
+  margin-bottom: 30px;
+}
+
+.last-news h2 {
+  font-size: 16px;
+}
+
+.last-news h3 {
+  font-size: 12px;
+}
+
+.last-news small,
+p {
+  font-size: 10px;
+}
+
+.load-more {
+  color: var(--color-light-red);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.button {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.load-more-button {
+  padding: 20px 56px;
+  font-size: 18px;
+  background-color: var(--color-light-red);
+  border: none;
+  border-radius: 8px;
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.games {
+  background-color: var(--color-light-gray);
+  padding: 0 10px;
+ padding-bottom: 10px;
+}
+.games h1{
+    color: var(--color-green-pool);
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
     margin: 0;
 }
-:root{
-    --color-green-pool:#38AF90;
-    --color-light-red:#DD7E92;
-    --color-dark-gray:#383838;
-    --color-light-gray:#F0F0F0;
-    --color-white:#FFF;
-    --color-gray:#797979;
-}
-.color-green{
-    color: var(--color-green-pool);
 
+.card-games {
+  background-color: var(--color-white);
+  margin-bottom: 30px;
+  border-radius: 8px;
+  max-width: 330px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+
+  
 }
-.line{
-    border: 1px solid #38AF90;
-}
-.container{
+.card-games img{
     width: 100%;
-    max-width: 990px;
-    margin: 0 auto;
-}
-img{
-    width: 280px;
-}
-
-.color-green{
-    color: var(--color-green-pool);
-}
-
-header{
-    height: 90px;
-    width: 100%;
-    background-color: var(--color-green-pool);
-    color: var(--color-white);
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    position: sticky;
-    top: 0;
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.75));
-
-}
-
-.nav-main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-
-}
-
-.nav-main h1{
-    font-size: 18px;
-}
-
-.nav-list-container{
-    margin: 0;
-    display: flex;
-    align-items: center;
-    margin-top: 7px;
+    max-width: 330px;
+    border-radius: 8px 8px 0 0;
     
 }
-
-.nav-list{
-    display: none;
-}
-
-.img-header{
-    list-style: none;
-    
- 
-}
-
-.img-header img{
-    width: 62px;
-}
-
-.last-news{
+.card-games h2{
     color: var(--color-gray);
-    padding: 0 10px;
-}
-
-.last-news h1{
-    text-align: center;
-}
-
-.card-last-news{
-    background-color:var(--color-light-gray);
-    padding: 16px 12px 12px 12px ;
-    border-radius: 8px;
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.75));
-    margin-bottom: 30px;
-}
-
-.last-news h2{
-   font-size: 16px;
-}
-
-.last-news h3{
-    font-size: 12px;
-}
-
-.last-news small,p{
-    font-size: 10px;
-}
-
-.load-more{
-    color: var(--color-light-red);
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0;
-}
-.button{
-    text-align: center;
-}
-.load-more-button{
-    padding: 20px;
     font-size: 18px;
-    background-color: var(--color-light-red);
-    border: none;
-    border-radius: 8px;
-    color: var(--color-white);
+    text-align: center;
+    margin-bottom: 0;
+}
+.games-creator{
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-gray);
+    text-align: center;
+}
+.card-games span{
+    color: var(--color-green-pool);
     font-weight: 700;
-    left: auto;
-    right: auto;
+    text-align: center;
+    font-size: 14px;
+
+}
+.grade{
+    color: var(--color-green-pool);
+    font-size: 36px;
+    text-align: center;
+    display: block;
+    padding: 15px 0;
+    margin: 0;
+    font-weight: 700;
 }
