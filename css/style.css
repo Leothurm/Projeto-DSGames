@@ -33,6 +33,8 @@ img {
 }
 
 header {
+  position: sticky;
+  top:0;
   height: 90px;
   width: 100%;
   background-color: var(--color-green-pool);
@@ -40,9 +42,8 @@ header {
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
-  position: sticky;
-  top: 0;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.75));
+  z-index: 1;
 }
 
 .nav-main {
@@ -103,8 +104,8 @@ header {
 .last-news small {
   font-size: 10px;
 }
-.paragraph-news{
-    font-size: 10px;
+.paragraph-news {
+  font-size: 10px;
 }
 
 .load-more {
@@ -132,20 +133,19 @@ header {
 .games {
   background-color: var(--color-light-gray);
   padding: 0 10px;
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
-.games h1{
-    color: var(--color-green-pool);
-    padding-top: 40px;
-    padding-bottom: 30px;
-    text-align: center;
-    margin: 0;
+.games h1 {
+  color: var(--color-green-pool);
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+  margin: 0;
 }
-.container-card-games{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+.container-card-games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .card-games {
@@ -154,54 +154,52 @@ header {
   border-radius: 8px;
   max-width: 300px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-
-  
 }
-.card-games img{
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px 8px 0 0;
-    
+.card-games img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px 8px 0 0;
 }
-.card-games h2{
-    color: var(--color-gray);
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 0;
+.card-games h2 {
+  color: var(--color-gray);
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0;
 }
-.games-creator{
-    margin: 0;
-    font-size: 12px;
-    color: var(--color-gray);
-    text-align: center;
-}
-.card-games span{
-    color: var(--color-green-pool);
-    font-weight: 700;
-    text-align: center;
-    font-size: 14px;
-
-}
-.grade{
-    color: var(--color-green-pool);
-    font-size: 36px;
-    text-align: center;
-    display: block;
-    padding: 15px 0;
-    margin: 0;
-    font-weight: 700;
-}
-
-.subscription{
-padding: 10px ;
-margin-top: 30px;
-color: var(--color-gray);
-margin-bottom: 50px;
-}
-.subscription h1{
+.games-creator {
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-gray);
   text-align: center;
 }
-.card-subscription{
+.card-games span {
+  color: var(--color-green-pool);
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+}
+.grade {
+  color: var(--color-green-pool);
+  font-size: 36px;
+  text-align: center;
+  display: block;
+  padding: 15px 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.subscription {
+  padding: 10px;
+  margin-top: 30px;
+  color: var(--color-gray);
+  margin-bottom: 50px;
+}
+
+.subscription h1 {
+  text-align: center;
+}
+
+.card-subscription {
   background-color: var(--color-light-gray);
   padding: 50px 10px 30px 10px;
   margin-bottom: 30px;
@@ -212,10 +210,9 @@ margin-bottom: 50px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   max-width: 790px;
   margin: 0 auto;
- 
 }
 
-.personal{
+.personal {
   width: 100%;
   height: 50px;
   font-size: 16px;
@@ -223,115 +220,109 @@ margin-bottom: 50px;
   border-radius: 4px;
   margin-bottom: 20px;
   padding-left: 20px;
-
-
 }
-#ctrl-console{
+#ctrl-console {
   display: flex;
   flex-direction: column;
- 
 }
 
-.container-buttons{
+.container-buttons {
   display: flex;
   flex-direction: column;
- 
+
   padding: 20px;
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
   justify-content: space-around;
   text-align: center;
- 
-
-
-} 
-.submit-button{
- background-color: var(--color-light-red);
- color: var(--color-white);
- font-weight: 700;
- height: 65px;
- font-size: 18px;
- max-width: 700px;
- margin-bottom: 20px;
- border-radius: 8px;
- 
 }
-.clear-button{
+.submit-button {
+  background-color: var(--color-light-red);
+  color: var(--color-white);
   font-weight: 700;
-  border: 2px solid #DD7E92;
+  height: 65px;
+  font-size: 18px;
+  max-width: 700px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.clear-button {
+  font-weight: 700;
+  border: 2px solid #dd7e92;
   color: var(--color-light-red);
   height: 65px;
   font-size: 18px;
   max-width: 700px;
   border-radius: 8px;
-  
 }
-.options{
+.options {
   display: flex;
   margin-bottom: 10px;
-
 }
-.option{
-
+.option {
 }
-.accept-news{
+.accept-news {
   margin-top: 25px;
 }
 
-.type-size{
+.type-size {
   width: 23px;
   height: 23px;
 }
 
-footer{
-    height: 300px;
-    background-color: var(--color-dark-gray);
-    color: var(--color-white);
-    text-decoration: none;
-    font-size: 14px;
-    text-align: center;
-    line-height: 21px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px 0;
+footer {
+  height: 300px;
+  background-color: var(--color-dark-gray);
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  line-height: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0;
 }
 
-footer a{
-    text-decoration: none;
-    color: var(--color-white);
-    display: block;
+footer a {
+  text-decoration: none;
+  color: var(--color-white);
+  display: block;
 }
 
-.use-terms p{
-    margin: 0;
+.use-terms p {
+  margin: 0;
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
   .nav-list {
     display: flex;
     list-style: none;
   }
 
-  .nav-list a{
+  .nav-list a {
     margin-right: 30px;
     text-decoration: none;
     color: var(--color-white);
   }
-  .container-buttons{
+  .card-subscription{
+    padding:50px 70px 0 70px ;
+  }
+
+  .container-buttons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .submit-button{
+  .submit-button {
     width: 250px;
   }
-.clear-button{
-  width: 250px;
-}
-  footer{
+  .clear-button {
+    width: 250px;
+  }
+  footer {
     height: 190px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
