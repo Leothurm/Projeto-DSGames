@@ -123,12 +123,13 @@
           </div>
         </div>
       </section>
-      <section id="subscription">
+      <section class="container subscription">
         <h1>Faça sua inscrição</h1>
-        <div>
+        <div class="card-subscription">
           <div>
-            <label for="ctrl-name">Nome</label>
+            <label for="ctrl-name"></label>
             <input
+              class="personal"
               id="ctrl-name"
               name="name"
               type="text"
@@ -136,34 +137,62 @@
             />
           </div>
           <div>
-            <label for="ctrl-email">Email</label>
+            <label for="ctrl-email"></label>
             <input
+              class="personal"
               id="ctrl-email"
               name="email"
               type="email"
               placeholder="Email"
             />
           </div>
-          <div>
+          <div class="container-consoles">
             <label for="ctrl-console">Qual sua plataforma preferida?</label>
             <div id="ctrl-console">
-              <input type="radio" name="console" id="ctrl-console-1" />
-              <label for="ctrl-console-1">PC</label>
-              <input type="radio" name="console" id="ctrl-console-2" />
-              <label for="ctrl-console-2">Xbox</label>
-              <input type="radio" name="console" id="ctrl-console-3" />
-              <label for="ctrl-console-3">Playstation</label>
+              <div class="options">
+                <input
+                  class="type-size"
+                  type="radio"
+                  name="console"
+                  id="ctrl-console-1"
+                />
+                <label class="option" for="ctrl-console-1">PC</label>
+              </div>
+              <div class="options">
+                <input
+                  class="type-size"
+                  type="radio"
+                  name="console"
+                  id="ctrl-console-2"
+                />
+                <label for="ctrl-console-2">Xbox</label>
+              </div>
+              <div class="options">
+                <input
+                  class="type-size"
+                  type="radio"
+                  name="console"
+                  id="ctrl-console-3"
+                />
+                <label for="ctrl-console-3">Playstation</label>
+              </div>
             </div>
           </div>
 
-          <div id="ctrl-news">
-            <input id="ctrl-news" name="news" type="checkbox" />
+          <div class="accept-news options" id="ctrl-news">
+            <input
+              class="type-size"
+              id="ctrl-news"
+              name="news"
+              type="checkbox"
+            />
             <label for="ctrl-news">Desejo receber novidades</label>
           </div>
 
-          <div>
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Limpar" />
+          <div class="container-buttons">
+            <input class="submit-button" type="submit" value="Enviar" />
+
+            <input class="clear-button" type="reset" value="Limpar" />
           </div>
         </div>
       </section>
